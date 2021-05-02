@@ -1,1 +1,178 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="scripts/script.js"></script> -->
+  </head>
+  <body>
+    <ul id="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#filmpje">Filmpje</a></li>
+      <li><a href="#cv">Cv</a></li>
+      <li><a href="#projecten">Projecten</a></li>
+      <li><a href="#competenties">competenties</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+
+    </ul>
+    <div class="container">
+      <div id="home" class="child">
+        <div id="polestar"></div>
+        <h1 id="title1">E-portfolio</h1>
+        <h1 id="title2">van Laurens Wissels</h1>
+        <img src="assets/head.jpg" id="head-img" alt="" onload="initHeadImg()">
+      </div>
+      <div id="filmpje" class="child">
+        <img id="plant1" src="assets/plant1.png" alt="">
+        <img id="plant2" src="assets/plant1.png" alt="">
+        <!-- <img id="plant2" src="assets/plant2.png" alt=""> -->
+        <div id="video-container">
+          <video id="video" controls>
+            <source src="./assets/LaurensWissels.mov" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+      <div id="cv" class="child">
+
+        <h1 id="cv-title">CV</h1>
+
+        <div id="cv-container">
+
+          <div id="persoon-info">
+            <ul>
+              <li>Naam: Laurens Wissels</li>
+              <li>Geboortedatum: 24/04/2000</li>
+              <li>Woonplaats: Houthalen-Helchteren 3530</li>
+              <li>E-mail: Wisselslaurens2000@gmail.com</li>
+              <li><a href="https://www.linkedin.com/in/laurens-wissels-a43987153/">Linkedin:https://www.linkedin.com </a></li>
+
+              <li>Telefoonnummer: +32472091840</li>
+              <li>Rijbewijs: Ja</li>
+            </ul>
+          </div>
+          <div id="cv-info">
+            <p>
+              <h2 class="cv-title">Profiel</h2>
+              <p>
+                Ik ben een 20-jarige student toegepaste informatica aan de hogeschool UCLL. Hier naast heb ik ook 2 jaar informatica aan de KU Leuven gevolgd. Ik ben op zoek naar eerste opportuniteiten om mijn IT carrière te starten en om van bij te leren. Ik ben zeer gemotiveerd om bij te leren en ga graag met mensen om.
+              </p>
+              <h2 class="cv-title">Werkervaring</h2>
+              <div id="werkervaring">
+                <div class="ervaringspunt">
+                  <ul class="ervaringinfo">
+                    <li>2020 - 2021</li>
+                    <li>Python programmeur </li>
+                    <li>IMEC, Kapeldreef 75, 3001 Leuven</li>
+                  </ul>
+                  <p class="beschrijving">Als studentenjob python programmeur was ik verantwoordelijk voor het schrijven van een programma dat automatisch een analyse uitvoert op data van de chip afdeling. Het programma genereerde automatisch een rapport in pdf formaat.</p>
+                </div>
+                <div class="ervaringspunt">
+                  <ul class="ervaringinfo">
+                    <li>2020 - 2021</li>
+                    <li>Robot python programmeur</li>
+                    <li>IMEC, Kapeldreef 75, 3001 Leuven</li>
+                  </ul>
+                  <p class="beschrijving">Ik was verantwoordelijk voor het programmeren en aansturen van een Opentrons OT-2 lab robot. Dit is een robot die instaat voor het automatisch pipetteren in een laboratorium.
+                  </p>
+                </div>
+
+              </div>
+              <h2 class="cv-title">Vaardigheden</h2>
+              <ul id="vaardigheden">
+                <li>Programmeertalen:
+                  <ul class="secList">
+                    <li>Python ( Expert )</li>
+                    <li>Java(Goed)</li>
+                    <li>Javascript ( Goed )</li>
+                  </ul>
+                </li>
+                <li>Web design; frontend, backend:
+                  <ul class="secList">
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                    <li>Java</li>
+                  </ul>
+                </li>
+                <li>Basis kennins van databanken, SQL</li>
+                <li>Vaardig in object gerichte software design</li>
+                <li>Kennis van besturingsystemen</li>
+                <li>Basis kennis van netwerken</li>
+              </ul>
+              <h2 class="cv-title">Educatie</h2>
+              <ul id="educatie">
+                <li>KU Leuven: 2de jaar bachelor informatica afegrond</li>
+                <li>UCLL: 1ste bachelor toegepaste informatica</li>
+              </ul>
+
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+      <div id="projecten" class="child">
+        <h1 id="project-title">Projecten</h1>
+        <div id="projecten-container">
+          <div class="child-container">
+            <img class="projectChild" id="web1" src="assets/web1.png" alt="">
+            <div class="description">
+              <p>Een website voor webontwikkeling1. Hier heb ik de basis van webontwikkeling geleerd. Dit hield html en css in. Ik heb als eindproject een site gemaakt over een goed doel</p>
+            </div>
+          </div>
+          <div class="child-container">
+            <img class="projectChild" id="web2" src="assets/web2.png" alt="">
+            <div class="description">
+              <p>Een website voor webontwikkeling2. Hier heb ik de geleerd om dynamische websites te maken met java. Ik heb een website gemaakt waarmensen hun bonsai boom kunnen toevoegen</p>
+            </div>
+          </div>
+          <div class="child-container">
+            <img class="projectChild" id="OOO" src="assets/OOO.png" alt="">
+            <div class="description">
+              <p>Voor het vak Object Oriented programming moest ik een gok spel maken in groep</p>
+            </div>
+          </div>
+          <div class="child-container">
+            <img class="projectChild" id="Maub" src="assets/Mazub.png" alt="">
+            <div class="description">
+              <p>Op de Ku Leuven moest ik voor het vak Object gericht programmeren een Mario Bros achtig spel maken. Hier heb ik de programmeer taal Java geleerd. </p>
+            </div>
+          </div>
+
+        </div>
+        <h2 id="scroll">Scroll naar links (op deskotp houd shift in en scroll)</h2>
+
+      </div>
+      <div id="competenties" class="child">
+        <h1 id="competenties-title">Competenties</h1>
+        <div id="competenties-container">
+          Ik ben al heel goed in het analyseren van een probleem en dit vertalen naar een TI-context. Ik heb al meerder studenten jobs gehad in de IT onder andere software schrijven voor IMEC. Tijdens deze jobs heb ik geleerd om een gegeven probleem te analyseren en de beste, meest realistische en meest adequate oplossing te ontwikkelen op basis van verschillende beperkingen en vereiste. Naast het analyseren van het probleem en het bedenken van een oplossing ben ik ook goed geworden in het ontwikkelen van kwalitatieve software die deze oplossing tot werkelijkheid brengt.
+
+Door de ervaringen in deze jobs ben ik ook goed geworden in het communiceren in een professionele werkomgeving en in een team.
+
+        </div>
+      </div>
+      <div id="contact" class="child">
+
+        <h1 id="contactTitle">Contact me!</h1>
+
+        <div id="contactInfo">
+          <ul>
+            <li>E-mail: Wisselslaurens2000@gmail.com</li>
+            <li>Telefoon: 0472091840</li>
+            <li><a href="https://www.linkedin.com/in/laurens-wissels-a43987153/">Linkedin:https://www.linkedin.com </a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script src="scripts/style.js"></script>
+
+</html>
